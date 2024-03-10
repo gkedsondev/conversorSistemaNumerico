@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gilson Kedson">
+    <title>Conversor de Bases Numéricas</title>
+    <link rel="stylesheet" href="resources/css/index.css">
+</head>
+<body>
+    <main id="container">
+        <div id="container-content">
+            <div id="form">
+                <input id="base-input-value" type="text" oninput="this.value=this.value.toUpperCase()" required/>
+                <select id="base-input" name="select-base-input">
+                    <!-- Preenchido via JS -->
+                </select>
+
+                <label> para </label>
+
+                <select id="base-output" name="select-base-output">
+                    <!-- Preenchido via JS -->
+                </select>
+
+                <button type="button" onclick="baseConverter()">Converter</button>
+            </div>
+
+            <div id="result">
+                <p><b>Resultado da conversão:</b> 
+                    <span id="result-value">
+                        <!-- Preenchido via JS -->
+                    </span>
+                </p> 
+            </div>
+        </div>
+    </main>
+
+    <script src="resources/js/script.js"></script>
+</body>
+</html>
